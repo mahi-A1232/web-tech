@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "registrationFormExternal.css">
+</head>
+<body class = "bg-light">
+    <div class = "container p-2 pt-5">
+       <div class = "row">
+          <div class = "col-12 mb-5">
+             <h1 class = "registrationForm-main-heading">Class Registration Form</h1>
+          </div>
+          <div class = "col-12">
+             <form id = "registrationForm">
+                <div class = "d-flex flex-row mb-2">
+                    <div class = "mr-5 mb-3">
+                        <label class = "registrationForm-label">First Name</label>
+                        <input type = "text" class = "form-control"/>
+                    </div>
+                    <div class = "mb-3">
+                        <label class = "registrationForm-label">Last Name</label>
+                        <input type = "text" class = "form-control"/>
+                    </div>
+                </div>
+                <div class = "mb-3">
+                   <label class = "registrationForm-label">Gender</label>
+                   <div class = "d-flex flex-row">
+                       <div class = "mr-5">
+                          <input type = "radio" value = "Male" name = "gender" id = "genderMale"/>
+                          <label class = "registrationForm-para" for = "genderMale">Male</label>
+                       </div>
+                       <div>
+                           <input type = "radio" value = "Female" name = "gender" id = "genderFemale"/>
+                           <label class = "registrationForm-para" for = "genderFemale">Female</label>
+                       </div>
+                   </div>
+                </div>
+                <div class = "mb-3">
+                   <div>
+                      <label class = "registrationForm-label">Student Email</label>
+                      <input type = "text" class = "form-control w-50" placeholder = "rsxxxxxx@rguktsklm.ac.in"/>
+                   </div>
+                </div>
+                <div class = "mb-3 d-flex flex-row">
+                   <div class = "mr-5">
+                      <label class = "registrationForm-label">Student Id</label>
+                      <input type = "text" class = "form-control"/>
+                   </div>
+                   <div>
+                      <label class = "registrationForm-label">Select Your Class</label>
+                      <select class = "form-control">
+                        <option value = "2A">Cse 2A</option>
+                        <option value = "2B">Cse 2B</option>
+                        <option value = "2C">Cse 2C</option>
+                        <option value = "2D" selected>Cse 2D</option>
+                        <option value = "2E">Cse 2E</option>
+                      </select>
+                   </div>
+                </div>
+                <div class = "mb-5">
+                   <div class = "mb-4">
+                     <lable class = "registrationForm-label">Register for courses</lable>
+                    <div>
+                   <div>
+                      <input type = "checkbox" id = "Dsp"/>
+                      <label class = "registrationForm-para" for = "Dsp">Python With DataScience</label>
+                   </div>
+                   <div>
+                     <input type = "checkbox" id = "WT"/>
+                     <label class = "registrationForm-para" for = "WT">Web Technologies</label>
+                   </div>
+                   <div>
+                     <input type = "checkbox" id = "COA"/>
+                     <label class = "registrationForm-para" for = "COA">Computer Architecture And Organization</label>
+                  </div>
+                </div>
+                <submit type = "submit" class = "btn btn-outline-primary">Submit</submit>
+             </form>
+          </div>
+       </div>
+    </div>
+</body>
+</html>
